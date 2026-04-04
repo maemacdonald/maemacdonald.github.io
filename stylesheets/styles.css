@@ -2,13 +2,15 @@
 
 body {
   padding:50px;
-  font:14px/1.5 Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color:#2d2d2d;
+  font:15px/1.6 Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color:#1a1a1a;
   font-weight:300;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color:#1a1a1a;
+  color:#111;
   margin:0 0 20px;
 }
 
@@ -44,28 +46,28 @@ h1 {
 }
 
 h2 {
-  color:#2a2a2a;
+  color:#1a1a1a;
   font-size:24px;
 }
 
 h3 {
-  color:#2a2a2a;
+  color:#1a1a1a;
   font-size:20px;
   font-weight:700;
 }
 
 h4, h5, h6 {
-  color:#3a3a3a;
+  color:#2a2a2a;
 }
 
 a {
-  color:#2574a8;
+  color:#3498db;
   font-weight:400;
   text-decoration:none;
 }
 
 a:hover {
-  color:#1a5a85;
+  color:#2980b9;
 }
 
 a small {
@@ -136,11 +138,6 @@ header ul {
   height:40px;
   padding:0;
   background: #eee;
-  background: -moz-linear-gradient(top, #f8f8f8 0%, #dddddd 100%);
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f8f8f8), color-stop(100%,#dddddd));
-  background: -webkit-linear-gradient(top, #f8f8f8 0%,#dddddd 100%);
-  background: -o-linear-gradient(top, #f8f8f8 0%,#dddddd 100%);
-  background: -ms-linear-gradient(top, #f8f8f8 0%,#dddddd 100%);
   background: linear-gradient(top, #f8f8f8 0%,#dddddd 100%);
   border-radius:5px;
   border:1px solid #d2d2d2;
@@ -166,7 +163,7 @@ header ul a {
 }
 
 strong, b {
-  color:#1a1a1a;
+  color:#111;
   font-weight:700;
 }
 
@@ -183,7 +180,7 @@ header ul li + li + li {
 header ul a strong {
   font-size:14px;
   display:block;
-  color:#1a1a1a;
+  color:#111;
 }
 
 section {
