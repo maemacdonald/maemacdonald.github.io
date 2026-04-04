@@ -268,3 +268,8 @@ footer {
     color:#444;
   }
 }
+
+b {
+  color:#222;
+  font-weight:700;
+}
