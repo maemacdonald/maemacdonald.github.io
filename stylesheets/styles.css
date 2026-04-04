@@ -5,6 +5,7 @@ body {
   font:15px/1.6 Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
   color:#1a1a1a;
   font-weight:400;
+  background:#fff;
   -webkit-font-smoothing:antialiased;
   -moz-osx-font-smoothing:grayscale;
 }
