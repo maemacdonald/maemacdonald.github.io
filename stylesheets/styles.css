@@ -8,7 +8,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color:#222;
+  color:#1a1a1a;
   margin:0 0 20px;
 }
 
@@ -39,21 +39,33 @@ h1, h2, h3 {
 }
 
 h1 {
-  font-size:28px;
+  font-size:36px;
+  font-weight:700;
 }
 
 h2 {
-  color:#393939;
+  color:#2a2a2a;
+  font-size:24px;
 }
 
-h3, h4, h5, h6 {
-  color:#494949;
+h3 {
+  color:#2a2a2a;
+  font-size:20px;
+  font-weight:700;
+}
+
+h4, h5, h6 {
+  color:#3a3a3a;
 }
 
 a {
-  color:#3498db;
+  color:#2574a8;
   font-weight:400;
   text-decoration:none;
+}
+
+a:hover {
+  color:#1a5a85;
 }
 
 a small {
@@ -153,8 +165,8 @@ header ul a {
   height:40px;
 }
 
-strong {
-  color:#222;
+strong, b {
+  color:#1a1a1a;
   font-weight:700;
 }
 
@@ -171,7 +183,7 @@ header ul li + li + li {
 header ul a strong {
   font-size:14px;
   display:block;
-  color:#222;
+  color:#1a1a1a;
 }
 
 section {
@@ -267,9 +279,4 @@ footer {
     font-size:12pt;
     color:#444;
   }
-}
-
-b {
-  color:#222;
-  font-weight:700;
 }
