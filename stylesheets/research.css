@@ -18,6 +18,51 @@ section p {
   font-weight: 600;
 }
 
+/* Restore the wider layout from the mock */
+.wrapper {
+  width: 900px;
+  max-width: 100%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 250px minmax(0, 1fr);
+  gap: 70px;
+  align-items: start;
+}
+
+header {
+  width: auto;
+  float: none;
+  position: sticky;
+  top: 38px;
+}
+
+section {
+  width: auto;
+  float: none;
+  padding-bottom: 50px;
+}
+
+body {
+  color: #5b5b5b;
+  font-weight: 400;
+  line-height: 1.55;
+}
+
+@media (max-width: 760px) {
+  .wrapper {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  header {
+    position: static;
+  }
+
+  section {
+    width: 100%;
+  }
+}
+
 /* Dropdown styling for research projects */
 .socials { display:flex; gap:12px; align-items:center; margin-top:15px; }
 .socials a { color:#444; }
