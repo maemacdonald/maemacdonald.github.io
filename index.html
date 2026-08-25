@@ -145,5 +145,15 @@
 
 </section>
 </div>
+  <script>
+  document.querySelectorAll('a[href]').forEach(link => {
+    const href = link.getAttribute('href');
+
+    if (!href.startsWith('mailto:')) {
+      link.setAttribute('target', '_blank');
+      link.setAttribute('rel', 'noopener noreferrer');
+    }
+  });
+</script>
 </body>
 </html>
