@@ -1,165 +1,217 @@
-body {
-  color: #5b5b5b;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
-  font-weight: 400;
-  line-height: 1.55;
+/* =========================================
+   RESEARCH PAGE
+   ========================================= */
+
+
+/* -----------------------------------------
+   Section headings
+   ----------------------------------------- */
+
+section h3 {
+  margin-top: 32px;
+  margin-bottom: 16px;
 }
 
-section p {
-  color: #5b5b5b;
-  font-weight: 400;
-}
 
-.project summary {
-  font-weight: 400;
-}
+/* -----------------------------------------
+   Book project
+   ----------------------------------------- */
 
-.project summary strong {
-  font-weight: 600;
-}
-
-/* Restore the wider layout from the mock */
-.wrapper {
-  width: 900px;
-  max-width: 100%;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: 250px minmax(0, 1fr);
-  gap: 70px;
-  align-items: start;
-}
-
-header {
-  width: auto;
-  float: none;
-  position: sticky;
-  top: 38px;
-}
-
-section {
-  width: auto;
-  float: none;
-  padding-bottom: 50px;
-}
-
-body {
-  color: #5b5b5b;
-  font-weight: 400;
-  line-height: 1.55;
-}
-
-@media (max-width: 760px) {
-  .wrapper {
-    grid-template-columns: 1fr;
-    gap: 25px;
-  }
-
-  header {
-    position: static;
-  }
-
-  section {
-    width: 100%;
-  }
-}
-
-/* Dropdown styling for research projects */
-.socials { display:flex; gap:12px; align-items:center; margin-top:15px; }
-.socials a { color:#444; }
-
-.project { margin:0 0 18px; }
-.project summary { color:#222; cursor:pointer; display:block; font-size:15px; line-height:1.5; list-style:none; padding-left:21px; position:relative; user-select:none; }
-.project summary::-webkit-details-marker { display:none; }
-.project summary::before { content:"▸"; color:#8a8a8a; font-size:15px; left:0; line-height:1; position:absolute; top:.75em; transform:translateY(-50%); transition:transform .12s ease; }
-.project[open] > summary::before { transform:translateY(-50%) rotate(90deg); }
-.project summary:hover strong { color:#267cb9; }
-.project .coauthors { color:#777; font-weight:400; }
-
-.project-details { background:#f8f8f8; border-left:3px solid #dedede; margin:10px 0 0 17px; padding:15px 17px 14px; }
-.project-details p { line-height:1.62; margin:0 0 13px; }
-.project-details p:first-child { color:#222; font-size:12px; letter-spacing:.04em; margin-bottom:5px; text-transform:uppercase; }
-.project-details .links { border-top:1px solid #e2e2e2; font-size:13px; margin-top:10px; padding-top:10px; }
-
-/* ==============================
-   PAPER ABSTRACT TOGGLES
-   ============================== */
-
-.paper-entry {
-  margin-bottom: 1.4em;
-}
-
-.paper-heading {
-  margin: 0 0 0.25em 0;
+.book-entry {
+  margin-bottom: 20px;
   line-height: 1.5;
 }
 
 
-/* Abstract control styled like a normal text link */
-.abstract-button {
-  -webkit-appearance: none;
-  appearance: none;
+/* -----------------------------------------
+   Numbered publication / paper lists
+   ----------------------------------------- */
 
-  display: inline;
-  background: none !important;
+.paper-list {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 24px;
+}
+
+.paper-list li {
+  margin-bottom: 15px;
+  padding-left: 2px;
+  line-height: 1.5;
+}
+
+
+/* -----------------------------------------
+   Paper titles
+   ----------------------------------------- */
+
+/* Titles that actually link to a paper */
+a.paper-title {
+  color: #168ff2;
+  text-decoration: none;
+}
+
+a.paper-title:hover {
+  text-decoration: underline;
+}
+
+
+/* Titles without an available paper */
+.paper-title.no-link {
+  color: inherit;
+  text-decoration: none;
+}
+
+
+/* -----------------------------------------
+   Coauthors
+   ----------------------------------------- */
+
+.coauthors {
+  color: inherit;
+  font-weight: normal;
+}
+
+
+/* -----------------------------------------
+   [Abstract] button
+
+   Makes the button look exactly like an
+   ordinary inline link rather than a button.
+   ----------------------------------------- */
+
+.bracket-link {
+  -webkit-appearance: none !important;
+  appearance: none !important;
+
+  display: inline !important;
+
+  margin: 0 0 0 3px !important;
+  padding: 0 !important;
+
+  border: none !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+
+  background: transparent !important;
+  background-color: transparent !important;
+
+  color: #168ff2 !important;
+
+  font-family: inherit !important;
+  font-size: inherit !important;
+  font-weight: normal !important;
+  line-height: inherit !important;
+
+  cursor: pointer;
+  vertical-align: baseline;
+  text-decoration: none;
+}
+
+.bracket-link:hover,
+.bracket-link:focus {
+  color: #168ff2 !important;
+  background: transparent !important;
+  background-color: transparent !important;
+  text-decoration: underline;
+}
+
+.bracket-link:focus {
+  outline: none;
+}
+
+.bracket-link:focus-visible {
+  outline: 1px dotted currentColor;
+  outline-offset: 2px;
+}
+
+
+/* -----------------------------------------
+   Expanded abstracts
+   ----------------------------------------- */
+
+.abstract {
+  margin: 9px 0 5px 0;
+  padding: 0;
+
+  color: #444;
+
+  background: transparent !important;
   background-color: transparent !important;
 
   border: none !important;
   border-radius: 0 !important;
   box-shadow: none !important;
 
-  padding: 0 !important;
-  margin: 0 0 0 0.25em;
-
-  font-family: inherit;
-  font-size: inherit;
-  font-weight: normal;
-  line-height: inherit;
-
-  color: #267CB9;
-  cursor: pointer;
-  text-decoration: none;
+  line-height: 1.5;
 }
 
-.abstract-button:hover,
-.abstract-button:focus {
-  background: none !important;
-  background-color: transparent !important;
-  color: #069;
-  text-decoration: underline;
-}
-
-.abstract-button:focus-visible {
-  outline: 1px dotted currentColor;
-  outline-offset: 2px;
-}
-
-
-/* Expanded abstract */
-.abstract-text {
-  margin: 0.55em 0 0.45em 0;
+.abstract p {
+  margin: 0 0 9px 0;
   padding: 0;
 
   background: transparent !important;
+  background-color: transparent !important;
+
   border: none !important;
   box-shadow: none !important;
 }
 
-.abstract-text p {
-  margin: 0;
-  padding: 0;
 
+/* Make sure closed abstracts really disappear */
+.abstract[hidden] {
+  display: none !important;
+}
+
+
+/* -----------------------------------------
+   Inline links:
+   [Talk], [Info], [PAP], etc.
+   ----------------------------------------- */
+
+.paper-list a:not(.paper-title),
+.book-entry a {
+  color: #168ff2;
+  text-decoration: none;
+}
+
+.paper-list a:not(.paper-title):hover,
+.book-entry a:hover {
+  text-decoration: underline;
+}
+
+
+/* -----------------------------------------
+   Remove old disclosure / gray-box styling
+   if any old .project CSS is still present
+   elsewhere
+   ----------------------------------------- */
+
+details.project,
+.project-details,
+details.project summary {
   background: transparent !important;
+  background-color: transparent !important;
+  border: none !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
 }
 
 
-/* Paper links underneath */
-.paper-entry .links {
-  margin-top: 0.35em;
-  margin-bottom: 0;
-}
+/* -----------------------------------------
+   Mobile
+   ----------------------------------------- */
 
+@media print, screen and (max-width: 720px) {
 
-/* Coauthor text */
-.coauthors {
-  font-weight: normal;
+  .paper-list {
+    padding-left: 22px;
+  }
+
+  .paper-list li {
+    padding-left: 0;
+  }
+
+  section h3 {
+    margin-top: 28px;
+  }
 }
