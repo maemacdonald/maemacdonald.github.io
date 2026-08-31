@@ -215,3 +215,57 @@ details.project summary {
     margin-top: 28px;
   }
 }
+
+/* =========================================
+   PAGE WIDTH + TYPOGRAPHY
+   Restore the slightly wider, stronger look
+   ========================================= */
+
+@media print, screen and (min-width: 961px) {
+
+  .wrapper {
+    width: 980px;
+  }
+
+  header {
+    width: 280px;
+  }
+
+  section {
+    width: 590px;
+  }
+}
+
+
+/* Slightly stronger body text */
+section {
+  font-weight: 400;
+}
+
+
+/* Keep headings clearly heavier */
+section h1,
+section h2,
+section h3,
+section h4,
+section strong {
+  font-weight: 600;
+}
+
+
+/* Paper titles should have the same normal text weight */
+.paper-title {
+  font-weight: 400;
+}
+
+
+/* Coauthors should not become artificially light */
+.coauthors {
+  font-weight: 400;
+}
+
+
+/* Abstracts should match the rest of the page */
+.abstract {
+  font-weight: 400;
+}
