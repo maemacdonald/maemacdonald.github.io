@@ -79,3 +79,87 @@ body {
 .project-details p { line-height:1.62; margin:0 0 13px; }
 .project-details p:first-child { color:#222; font-size:12px; letter-spacing:.04em; margin-bottom:5px; text-transform:uppercase; }
 .project-details .links { border-top:1px solid #e2e2e2; font-size:13px; margin-top:10px; padding-top:10px; }
+
+/* ==============================
+   PAPER ABSTRACT TOGGLES
+   ============================== */
+
+.paper-entry {
+  margin-bottom: 1.4em;
+}
+
+.paper-heading {
+  margin: 0 0 0.25em 0;
+  line-height: 1.5;
+}
+
+
+/* Abstract control styled like a normal text link */
+.abstract-button {
+  -webkit-appearance: none;
+  appearance: none;
+
+  display: inline;
+  background: none !important;
+  background-color: transparent !important;
+
+  border: none !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+
+  padding: 0 !important;
+  margin: 0 0 0 0.25em;
+
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: normal;
+  line-height: inherit;
+
+  color: #267CB9;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.abstract-button:hover,
+.abstract-button:focus {
+  background: none !important;
+  background-color: transparent !important;
+  color: #069;
+  text-decoration: underline;
+}
+
+.abstract-button:focus-visible {
+  outline: 1px dotted currentColor;
+  outline-offset: 2px;
+}
+
+
+/* Expanded abstract */
+.abstract-text {
+  margin: 0.55em 0 0.45em 0;
+  padding: 0;
+
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.abstract-text p {
+  margin: 0;
+  padding: 0;
+
+  background: transparent !important;
+}
+
+
+/* Paper links underneath */
+.paper-entry .links {
+  margin-top: 0.35em;
+  margin-bottom: 0;
+}
+
+
+/* Coauthor text */
+.coauthors {
+  font-weight: normal;
+}
